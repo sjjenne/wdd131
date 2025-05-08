@@ -1,32 +1,108 @@
 @import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
 :root {
-    --primary-color: #52489c;
-    --secondary-color: #59c3c3;
-    --accent-color: #f45b69;
+    --primary-color: #2367b5;
+    --secondary-color: white;
+    --accent-color: #c8e2f9;
     --text-dark: #333;
     --text-light: #ebebeb;
     --primary-font: Arial, Helvetica,sans-serif;
     --secondary-font: Mooli, san-serif;
     }
-   
-img {
-    max-width: 100%;
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 2rem;
+    margin: 0;
+    text-align: center;
 }
 
-body {
-    font-family: var(--primary-font);
-    font-size: 1.2em;
+h1 {
+    margin-top: -15px;
 }
+
+h2 {
+    margin-bottom: 0;
+}
+
+nav a {
+    padding: 8px;
+    display: block;
+}
+
 a:link,
 a:visited {
     color: var(--accent-color);
 }
 
-h1 {
+h3 {
+    color: var(--text-dark);
+}
+
+img {
+    max-width: 100%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 10px solid var(--accent-color);
+    box-shadow: 5px 5px 5px var(--text-light);
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    margin: 0;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.gallery {
+    justify-self: center;
+}
+
+footer {
     background-color: var(--primary-color);
     color: var(--text-light);
-    padding: 2rem;
+    padding: 2px;
+    margin: 0;
+}
+
+@media screen and (min-width: 700px) {
+    nav {
+        display: none;
+    }
+    h2{
+        margin-bottom: -10px;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-self: center;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+    footer p {
+        grid-column: 1/2;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    h2 {
+        display: none;
+    }
+    nav {
+        display: initial;
+    }
+    nav a {
+        padding: 20px;
+        margin: 40px;
+        display: inline;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-self: center;
+    }
 }
