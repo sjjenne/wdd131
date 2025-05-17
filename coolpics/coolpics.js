@@ -19,9 +19,7 @@ function handleResize() {
     }
 }
 
-// handleResize();
-// window.addEventListener("resize", handleResize);
-
+window.addEventListener("resize", handleResize);
 
 // Modal
 const gallery = document.querySelector('.gallery')
@@ -39,28 +37,24 @@ closeBtn.addEventListener('click', () => {
     modal.close();
   });
 
-  gallery.addEventListener('click', (event) => {
+gallery.addEventListener('click', (event) => {
     const clickedImg = event.target.closest('img');
   
     if (!clickedImg) return;
   
-    // Get the src of the clicked image
     const thumbSrc = clickedImg.getAttribute('src');
+    const altText = clickedImg.getAttribute('alt');
   
-    // Assume high-def version is in a different folder, remove '-thumb' from the filename
-    const highDefSrc = thumbSrc.replace('-thumb', '').replace('thumbs/', 'images/');
+    const fullImageSrc = thumbSrc.split('-')[0] + '-full.jpeg';
   
-    // Set the high-def image into the modal
-    modalImg.setAttribute('src', highDefSrc);
-    modalImg.setAttribute('alt', clickedImg.alt);
+    modalImg.setAttribute('src', fullImageSrc);
+    modalImg.setAttribute('alt', altText);
   
-    // Show the modal
     modal.showModal();
   });
 
 modal.addEventListener('click', (event) => {
-// If the click is outside the image, close the modal
-if (event.target === modal) {
+    if (event.target === modal) {
     modal.close();
-}
+    }
 });
