@@ -15,12 +15,12 @@
     justify-self: center;
 }
 
-.skiptocontent a {
+.skiptocontent > a {
 	position: absolute;
 	margin-top: -100px;
 	background-color: white;
 }
-.skiptocontent a:focus {
+.skiptocontent > a:focus {
 	margin-top: -20px;
 }
 
