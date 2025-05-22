@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+
+:root {
+    --primary-color: #F9F7F0;
+    --secondary-color: #395174;
+    --accent-color: #748CAB;
+    --heading: #4a6c8d;
+    --primary-font: 'Short Stack', 'Georgia', 'Sans-serif';
+    --secondary-font: Mooli, san-serif;
+    }
+
+#content {
+    max-width: 1500px;
+    justify-self: center;
+}
+
+.skiptocontent a {
+	position: absolute;
+	margin-top: -100px;
+	background-color: white;
+}
+.skiptocontent a:focus {
+	margin-top: -20px;
+}
+
+.book_title {
+    color: var(--heading);
+}
+
+nav {
+    border-top: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.main_nav {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    list-style-type: none;
+}
+
+.main_nav li {
+    margin-right: 60px;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+a {
+    color: var(--secondary-color);
+    font-size: 1.1em;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+}
+
+h1 {
+    margin: 50px;
+    text-align: center;
+    color: var(--heading);
+}
+
+#books {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.book_title {
+    padding-top: 10px;
+}
+
+#book1_content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.book_cover {
+    padding-left: 50px;
+}
+
+
