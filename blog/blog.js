@@ -25,3 +25,33 @@ const articles = [
 		stars: '⭐⭐⭐⭐'
 	}
 ]
+
+console.log(articles[1].title);
+
+
+const shelf = document.querySelector("#shelf");
+
+articles.forEach(function(item){
+
+	let article = document.createElement('article');
+
+	article.setAttribute('class', 'book');
+
+	let html =  `
+			<div class="review">
+				<p>${item.date}</p>
+				<p>${item.age}</p>
+				<p>${item.genre}</p>
+				<p>${item.review}</p>
+			</div>
+			<div class="book_content"> 
+				<h2 class="book_title">${item.title}</h2>
+				<div class="book_cover"><img src=${item.imgSrc} alt=${item.imgAlt}></div>
+				<p class="book_description">${item.description} <a ${item.readMore}>Read More...</a></p>
+			</div> `;
+
+	article.innerHTML = html;
+
+	shelf.appendChild(article);
+
+})
