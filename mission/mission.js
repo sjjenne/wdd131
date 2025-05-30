@@ -14,7 +14,7 @@ function changeTheme() {
     }
     else {
         document.body.classList.remove("dark");
-        logo.setAttribute("src", "byui-blue.webp")
+        logo.setAttribute("src", "byui-logo_blue.webp")
         logo.setAttribute("alt", "BYU-Idaho logo")
     }
 }
