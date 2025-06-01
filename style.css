@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+:root {
+    --dark-green: #3e5b3be3;
+    --light-green: #eff4d2d0;
+    --text-light: #ffffff;
+    --font: 'Caveat Brush', 'Courier New'
+    }
+
+#page {
+    max-width: 1600px;
+    font-family: var(--font);
+    font-size: 1.15em;
+    word-spacing: .2em;
+    letter-spacing: .02em;
+    box-shadow: 2px 2px 2px 2px #eef0e5;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 50px;
+    color: var(--text-light);
+}
+
+.links {
+    list-style-type: none;
+    margin-top: 100px;
+    margin-right: 50px;
+}
+
+li {
+    padding: 10px;
+    transition: transform .2s;
+}
+
+li:hover {
+    transform: scale(1.2);
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: var(--text-light);
+
+}
+
+a:hover {
+    color: var(--light-green);
+}
+
+#projects {
+    grid-column: 1/2;
+    background-color: var(--dark-green);
+    border-radius: 10px 0px 0px 10px;
+}
+
+#about_me {
+    grid-column: 2/3;
+    text-align: center;
+    color: var(--dark-green);
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.image {
+    margin-top: 100px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    justify-self: center;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
