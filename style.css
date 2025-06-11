@@ -8,12 +8,14 @@
     }
 
 #page {
-    max-width: 1600px;
+    max-width: 1800px;
+    justify-self: center;
     font-family: var(--font);
     font-size: 1.15em;
     word-spacing: .2em;
     letter-spacing: .02em;
     box-shadow: 2px 2px 2px 2px #eef0e5;
+    margin: 20px;
 }
 
 #content {
