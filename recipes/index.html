@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online recipe book.">
+    <meta name="author" content="Sammy Jenne">
+    <link rel="icon" href="images/recipe-book.png">
+    <title>RecipeBook</title>
+    <link rel="stylesheet" href="recipes.css">
+    <script defer src="recipes.js"></script>
+
+    <meta property="og:title" content="RecipeBook">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Online recipe book.">
+    <meta property="og:image" content="images/apple-crisp">
+    <meta property="og:url" content="URL of the page">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body id="content">
+    <header>
+        <div id="title">
+            <a href="#"><img src="images/recipe-book.png" alt="recipe book icon"></a>
+            <h1>RecipeBook</h1>
+        </div>
+        <div id="search">
+            <input name="bar" type="text" placeholder="Find a Recipe" id="search-bar" />
+            <img class="button" id="search-button" src="images/search.svg" alt="search icon">
+        </div>
+        <hr>
+    </header>
+    <main>
+        <div id="content">
+            <div class="recipe">
+                <img src="images/apple-crisp.jpg" alt="apple crisp">
+                <div class="recipe-content">
+                    <p class="category button">dessert</p>
+                    <p class="recipe-name">Apple Crisp</p>
+                    <span
+                        class="rating"
+                        role="img"
+                        aria-label="Rating: 4 out of 5 stars"
+                    >
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star-empty">⭐</span>
+                        <span aria-hidden="true" class="icon-star-empty">☆</span>
+                    </span>
+                    <p class="hidden">This apple crips is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer">
+            <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+            <div class="social">
+                <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+                <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+                <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+                <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

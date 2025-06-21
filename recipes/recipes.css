@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+:root {
+    --text-dark: #333;
+    --text-color: #54b1b1;
+    --primary-font: Arial, Helvetica, san-serif;
+    --secondary-font: "Amatic SC";
+    }
+
+img {
+	max-width: 100%;
+}
+#title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+header img {
+    width: 100px;
+}
+header h1 {
+    font-family: var(--secondary-font);
+    font-size: 4em;
+}
+
+
+#search {
+    display: flex;
+    justify-content: center;
+}
+#search-bar {
+    width: 60%;
+}
+#search-button {
+    border: black 1px solid;
+    width: 30px;
+    border-radius: 5px;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: black 1px solid;
+    border-radius: 10px;
+    width: fit-content; 
+    padding: 20px;
+    margin: 1em auto; 
+}
+.recipe img {
+    width: 300px;
+    align-self: center;
+}
+.recipe-name {
+    font-family: var(--secondary-font);
+    color: var(--text-color);
+    font-size: 2em;
+    margin: 0;
+    width: fit-content;
+    text-align: center;
+}
+.category {
+    border: black 1px solid;
+    padding: 0.25em;
+    text-align: center;
+    width: fit-content;
+}
+.rating {
+    font-size: 1.5em;
+    margin: 0;
+    width: fit-content;
+    text-align: center;
+}
+
+footer img {
+    width: 50px;
+}
+#footer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+#footer a {
+    color: var(--text-color);
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 800px) {
+    .recipe {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1em;
+    }
+    .hidden {
+        display: flex;
+        width: 350px;
+        font-family: var(--primary-font);
+    }
+    .recipe img {
+        width: 400px;
+    }
+    #footer {
+        flex-direction: row;
+        justify-content: space-between;
+
+        max-width: 800px;  
+        margin: auto;    
+        padding: 1em;   
+    }
+}
