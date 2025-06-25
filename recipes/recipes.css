@@ -24,30 +24,32 @@ header h1 {
     font-size: 4em;
 }
 
-
 #search {
     display: flex;
     justify-content: center;
 }
 #search-bar {
-    width: 60%;
+    width: 300px;
 }
 #search-button {
-    border: black 1px solid;
     width: 30px;
     border-radius: 5px;
 }
 
+hr {
+    margin: 30px;
+}
 .recipe {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     border: black 1px solid;
     border-radius: 10px;
-    width: fit-content; 
+    width: 60%; 
     padding: 20px;
     margin: 1em auto; 
 }
+
 .recipe img {
     width: 300px;
     align-self: center;
@@ -60,9 +62,14 @@ header h1 {
     width: fit-content;
     text-align: center;
 }
+.tags {
+    display: flex;
+    flex-direction: row;
+}
 .category {
     border: black 1px solid;
     padding: 0.25em;
+    margin: .25em;
     text-align: center;
     width: fit-content;
 }
@@ -90,11 +97,16 @@ footer img {
     display: none;
 }
 
+li {
+    list-style-type: none;
+}
+
 @media screen and (min-width: 800px) {
     .recipe {
         flex-direction: row;
         align-items: flex-start;
         gap: 1em;
+         width: 80%; 
     }
     .hidden {
         display: flex;
@@ -111,5 +123,8 @@ footer img {
         max-width: 800px;  
         margin: auto;    
         padding: 1em;   
+    }
+    #search-bar {
+        width: 750px;
     }
 }
