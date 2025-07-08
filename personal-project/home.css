@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Combo&family=Gravitas+One&family=Kalam:wght@300;400;700&display=swap');
+
+:root {
+  --primary-color: #52382bc4;
+  --secondary-color: #e1ebf2bc;
+  --accent1-color: #6d7844b1;
+  --accent2-color: #eeedec;
+  --heading-font: Bree Serif, Gravitas One;
+  --paragraph-font: Combo, Kalam, sans-serif;
+}
+/* MOBILE FRIENDLY FIRST */
+#content {
+    max-width: 500px;
+    font-family: var(--paragraph-font);
+}
+nav {
+    background-color: #eeedec4c;
+    position: absolute;
+    width: 100%;
+    margin: -10px -10px 0px -10px;
+    align-items: center;
+    z-index: 1;
+}
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 50px;
+    margin-right: 50px;
+}
+nav ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--primary-color)
+}
+nav img {
+    margin-top: -20px;
+    position: absolute;
+}
+#hero-section {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#hero-img {
+    position: absolute;
+    width: 100%;
+    margin: -20px -10px 10px -10px;
+    z-index: -1;
+}
+#hero-img img{
+    width: 100%;
+    opacity: 70%;
+}
+#hero-title {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    grid-row: 2/3;
+    grid-column: 2/3;
+    text-align: center;
+}
+#hero-title h1 {
+    font-size: 30px;
+    
+}
+#hero-title h2 {
+    font-size: 20px;
+    
+}
+
+
+
+main {
+    margin-top: 1000px;
+}
+
+
+#slideshow {
+    position: relative;
+}
+
+#slide {
+    display: none;
+}
+
+#prev, #next {
+    cursor: pointer;
+    position: absolute;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.dot {
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+
