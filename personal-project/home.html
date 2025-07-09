@@ -8,7 +8,7 @@
     <link rel="icon" href="images/logo.png">
     <title>Home | US National Park Travel Guide</title>
     <link type="text/css" rel="stylesheet" href="home.css">
-    <!-- <script></script> -->
+    <script defer src="home.js"></script>
 </head>
  <!-- All national park images provided under CC from https://unsplash.com/s/photos/national-park  -->
 <body id="content">
@@ -16,20 +16,19 @@
         <nav>
             <img src="images/logo.png" alt="traveling logo" width="100px">
             <ul id="navbar"> 
-                <li><a href="home.html">Home</a></li>
-                <li><a href="parks.html">Parks</a></li>
+                <li class="nav-button"><a href="home.html">Home</a></li>
+                <li class="nav-button"><a href="parks.html">Parks</a></li>
             </ul>
         </nav>
         <section id="hero-section">
-            <div id="hero-img">
-                <img src="images/arches.jpg" alt="arches national park">
-            </div>
+            <img id="hero-img" src="images/arches.jpg" alt="arches national park">
             <div id="hero-title">
                 <h1>US National Parks</h1>
                 <h2>traveling guide</h2>
             </div>
         </section>
     </header>
+    <hr>
     <main>
         <section class="description-section">
             <p>***** Short description ******</p>
@@ -51,8 +50,8 @@
                     <img src="images/yellowstone.jpg" alt="yellowstone national park">
                 </div>
 
-                <a id="previous">&#10094;</a>
-                <a id="next">&#10095;</a>
+                <a id="previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a id="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
 
             <div id="dots-slideshow">
